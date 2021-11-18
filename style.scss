@@ -1,0 +1,212 @@
+@charset "UTF-8";
+$color-text: #A6ADb4;
+$color-heading:#202124;
+$color-gray:#F6F8F9;
+$color-acce:#FA6980;
+
+@mixin inner() {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@mixin flex ($j:space-between,){
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: $j;
+
+}
+
+@mixin btn {
+    background-color: $color-acce;
+    padding: 13px 43px;
+    display: inline-block;
+    color: #FFF;
+    text-decoration: none;
+}
+@mixin time {
+     font-size: 12px;
+        color: $color-text;
+        font-weight: italic;
+        padding-left: 10px;
+}
+
+body{
+    font-family:'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    line-height: (24 / 14);
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none
+}
+
+
+
+// BLOCK-------------------------------
+// header
+.header{
+    padding-top: 30px;
+    &__inner{
+        @include inner;
+    }
+    &__flex{
+        @include flex();
+    }
+}
+.g-nav{
+    &__list{
+        @include flex;
+    }
+
+    &__link-frist a{
+        color: #343638;
+    }
+ul li a{
+    color: $color-text;
+    margin-left: 20px;
+}
+}
+
+
+// footer
+.footer{
+background-color: $color-text;
+padding-top: 100px;
+    padding-bottom: 42px;
+
+&__inner{
+    @include inner();
+}
+}
+small{
+    color: #CBD0D3;
+}
+
+
+
+.morenews{
+
+     &__list{
+         @include flex();
+     }
+
+     &__inner{
+         @include inner;
+     }
+}
+
+.news{
+width: 47.5%;
+
+    &__title{
+        color: $color-acce;
+        font-size: 12px;
+    }
+    &__subtitle{
+        color: $color-heading;
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    &__text{
+        color: $color-text;
+    }
+
+    &__time-flex{
+        @include flex(flex-start);
+        padding-top: 20px;
+        margin-bottom: 60px;
+    }
+    &__btn{
+    @include btn;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+}
+
+    &__time{
+    @include time;
+    }
+}
+
+
+.trending{
+background-color: $color-gray;
+
+&__inner{
+    @include inner();
+}
+
+&__list{
+@include flex;
+}
+
+}
+
+.card{
+    width:47.5%;
+    margin-bottom: 60px;
+
+
+
+&__body{
+    background-color: #FFF;
+    padding: 0 35px;
+
+}
+
+    &__title{
+    color: $color-heading;
+    font-size: 18px;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+&__text{
+    color: $color-text;
+    font-size: 14px;
+}
+
+&__btn{
+    @include btn;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+}
+ &__time-flex{
+        @include flex(flex-start);
+        padding-top: 20px;
+        margin-bottom: 60px;
+    }
+&__time{
+    @include time;
+    }
+}
+
+.main__title{
+        margin-bottom: 30px;
+padding-bottom: 30px;
+border-bottom: 1px solid #EBEDED;
+color: $color-heading;
+font-size: 24px;
+font-weight: bold;
+padding-top: 60px;
+}
+
+//discovery
+
+.discovery .news{
+width: 100%;
+}

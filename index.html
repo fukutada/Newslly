@@ -7,106 +7,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newslly</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="l-header">
-        <div class="header-flex l-inner">
-            <h1><img src="images/img_logo.png" alt=""></h1>
-            <div class="header-nav">
-                <ul>
-                    <li><a href="#"></a>HOME</li>
-                    <li><a href="#"></a>DISCOVERY</li>
-                    <li><a href="#"></a>PHOTOS</li>
-                    <li><a href="#"></a>CONTACT</li>
+    <header class="header">
+        <div class="header__inner header__flex">
+            <h1 class="header__logo"><img src="images/img_logo.png" alt="Newslly"></h1>
+            <nav class="g-nav">
+                <ul class="g-nav__list">
+                    <li class="g-nav__item"><a href="#" class="g-nav__link g-nav__link-frist">HOME</a></li>
+                    <li class="g-nav__item"><a href="#" class="g-nav__link">DISCOVERY</a></li>
+                    <li class="g-nav__item"><a href="#" class="g-nav__link">PHOTOS</a></li>
+                    <li class="g-nav__item"><a href="#" class="g-nav__link">CONTACT</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </header>
-    <main class="l-main">
-        <section class="l-section l-inner">
-            <h2 class="section-title">MORE NEWS</h2>
-            <div class="shells">
-                <div class="shell col6">
-                    <P class="shell-title">TRAVEL</P>
-                    <h3 class="shell-subtitle">Subtitle</h3>
-                    <p class="shell-main">Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam
-                        detracto, vidit vituperatoribus duo id. Affert detraxit
-                        voluptatum vis eu, inermis eloquentiam.</p>
-                    <div class="time-flex">
-                        <img src="images/icon_time.png" alt="">
-                        <p class="time">2m ago</p>
-                    </div>
-                </div>
-                <div class="shell col6">
-                    <P class="shell-title">TECHNOLOGY</P>
-                    <h3 class="shell-subtitle">Subtitle</h3>
-                    <p class="shell-main">Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam
-                        detracto, vidit vituperatoribus duo id. Affert detraxit
-                        voluptatum vis eu, inermis eloquentiam.</p>
-                    <div class="time-flex">
-                        <img src="images/icon_time.png" alt="">
-                        <p class="time">1h ago</p>
-                    </div>
-                </div>
-                <div class="shell col6">
-                    <P class="shell-title">PHOTO</P>
-                    <h3 class="shell-subtitle">Subtitle</h3>
-                    <p class="shell-main">Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam
-                        detracto, vidit vituperatoribus duo id. Affert detraxit
-                        voluptatum vis eu, inermis eloquentiam.</p>
-                    <div class="time-flex">
-                        <img src="images/icon_time.png" alt="">
-                        <p class="time">1d ago</p>
-                    </div>
-                </div>
-                <div class="shell col6">
-                    <P class="shell-title">VIDEO</P>
-                    <h3 class="shell-subtitle">Subtitle</h3>
-                    <p class="shell-main">Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam
-                        detracto, vidit vituperatoribus duo id. Affert detraxit
-                        voluptatum vis eu, inermis eloquentiam.</p>
-                    <div class="time-flex">
-                        <img src="images/icon_time.png" alt="">
-                        <p class="time">3d ago</p>
-                    </div>
+    <main class="index">
+        <section class="morenews">
+            <div class="morenews__inner">
+                <h2 class="main__title">MORE NEWS</h2>
+                <div class="morenews__list">
+                    <article class="news">
+                        <h2 class="news__title">TRAVEL</h2>
+                        <h3 class="news__subtitle">Subtitle</h3>
+                        <p class="news__text">Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam
+                            detracto, vidit vituperatoribus duo id. Affert detraxit
+                            voluptatum vis eu, inermis eloquentiam.</p>
+                        <div class="news__time-flex">
+                            <img src="images/icon_time.png" alt="time">
+                            <p class="news__time">2m ago</p>
+                        </div>
+                    </article>
+                    <article class="news">
+                        <h2 class="news__title">TECHNOLOGY</h2>
+                        <h3 class="news__subtitle">Subtitle</h3>
+                        <p class="news__text">Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam
+                            detracto, vidit vituperatoribus duo id. Affert detraxit
+                            voluptatum vis eu, inermis eloquentiam.</p>
+                        <div class="news__time-flex">
+                            <img src="images/icon_time.png" alt="time">
+                            <p class="news__time">1h ago</p>
+                        </div>
+                    </article>
+                    <article class="news">
+                        <h2 class="news__title">PHOTO</h2>
+                        <h3 class="news__subtitle">Subtitle</h3>
+                        <p class="news__text">Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam
+                            detracto, vidit vituperatoribus duo id. Affert detraxit
+                            voluptatum vis eu, inermis eloquentiam.</p>
+                        <div class="news__time-flex">
+                            <img src="images/icon_time.png" alt="time">
+                            <p class="news__time">1d ago</p>
+                        </div>
+                    </article>
+                    <article class="news">
+                        <h2 class="news__title">VIDEO</h2>
+                        <h3 class="news__subtitle">Subtitle</h3>
+                        <p class="news__text">Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam
+                            detracto, vidit vituperatoribus duo id. Affert detraxit
+                            voluptatum vis eu, inermis eloquentiam.</p>
+                        <div class="news__time-flex">
+                            <img src="images/icon_time.png" alt="time">
+                            <p class="news__time">3d ago</p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
-        <section class="l-section l-section-under">
-            <div class="l-inner">
-                <h2 class="section-title">TRENDING</h2>
-                <div class="card-flex">
-                    <div class="card col6">
+        <section class="trending">
+            <div class="trending__inner">
+                <h2 class="main__title">TRENDING</h2>
+                <div class="trending__list">
+                    <article class="trending__item card">
                         <img src="images/pic_trending01.png" alt="">
-                        <div class="card-under">
-                            <p class="card-title">Dolore magna aliqua</p>
-                            <p class="card-main">Lorem ipsum dolor sit amet, ipsum labitur lucilius
+                        <div class="card__body">
+                            <h3 class="card__title">Dolore magna aliqua</h3>
+                            <p class="card__text">Lorem ipsum dolor sit amet, ipsum labitur lucilius
                                 mel id, ad has appareat.</p>
-                            <div class="btn card-btn">
-                                <a href="#">READ MORE</a>
-                            </div>
+                            <a href="" class="card__btn btn">READ MORE</a>
                         </div>
-                    </div>
-                    <div class="card col6">
+                    </article>
+                    <article class="trending__item card">
                         <img src="images/pic_trending02.png" alt="">
-                        <div class="card-under">
-                            <p class="card-title">Morbi eleifend a libero</p>
-                            <p class="card-main">Lorem ipsum dolor sit amet, ipsum labitur lucilius
+                        <div class="card__body">
+                            <h3 class="card__title">Morbi eleifend a libero</h3>
+                            <p class="card__text">Lorem ipsum dolor sit amet, ipsum labitur lucilius
                                 mel id, ad has appareat.</p>
-                            <div class="btn card-btn">
-                                <a href="#">READ MORE</a>
-                            </div>
-                        </div>
-                    </div>
+                            <a href="" class="card__btn btn">READ MORE</a>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="l-footer">
-        <div class="l-inner">
-            <small>TRIDENT college All Rights Reserved.</small>
+    <footer class="footer">
+        <div class="footer__inner">
+            <p class="footer__copy"><small>TRIDENT college All Rights Reserved.</small></p>
         </div>
     </footer>
 </body>
